@@ -1,0 +1,480 @@
+/*LLAMADO A TODO EL DOCUMENTO*/
+/*ESTILOS RESET CSS*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px red solid;
+    color: black;
+    max-width: 1500px;
+}
+
+#body {
+    max-width: 1500px;
+}
+
+
+/*ESTILO HEADER/NAV*/
+#header {
+    width: 100%;
+    height: 50px;
+    background-color:#735A3C;
+    text-align: center;
+    position: fixed;
+}
+
+li , ul {
+    display: inline-block;
+    margin-left: 20px;
+    color: black;
+}
+
+#navBar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar-ul {
+    text-align: center;
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 20px;
+    color: black;
+}
+
+
+/*ESTILOS BANNER INICIO*/
+.main__banner {
+    width: 100%;
+    height: 500px;
+    background-image: url("images/COMIENZAELDIA.avif");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+}
+
+.h1 {
+        font-family: "Berkshire Swash", serif;
+        font-weight: lighter;
+        font-size: 100px;
+        font-style: normal;
+        margin-top: 50px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+}
+
+.h2 {
+        font-family: "Bad Script", cursive;
+        font-weight: 400;
+        font-size: 50px;
+        margin-left: 500px;
+        height: 80px;
+}
+
+.h1 , .h2 {
+    color: white;
+    text-align: center;
+}
+
+.main__banner2 {
+    margin-top: 300px;
+    width: 100%;
+    height: 500px;
+    background-image: url("images/COMIENZAELDIA.avif");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+}
+
+.h5 {
+    color: white;
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    height: 110px;
+}
+
+.h6 {
+    color: white;
+    font-family: "Berkshire Swash", serif;
+    font-weight: lighter;
+    font-size: 100px;
+    font-style: normal;
+    display: block;
+    text-align: center;
+    align-items: center;
+    height: 120px;
+}
+
+
+/*ESTILOS BANNER GALERIA*/
+.main__bannerImg {
+    width: 100%;
+    height: 500px;
+    background-image: url("images/COMIENZAELDIA.avif");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+}
+
+.h1__text {
+    color: white;
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    height: 110px;
+}
+
+.h2__text {
+    color: white;
+    font-family: "Berkshire Swash", serif;
+    font-weight: lighter;
+    font-size: 100px;
+    font-style: normal;
+    display: block;
+    text-align: center;
+    align-items: center;
+    height: 120px;
+}
+
+
+/*ESTILOS MAIN INICIO*/
+#main picture img {
+    padding-top: 100px;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 70px;
+}
+
+.contenedor {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+}
+
+.btn {
+    background-color: #735A3C;
+    text-align: center;
+    font-family: "Bitter", serif;
+    display: inline-block;
+    font-size: 16px; 
+    padding: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer; 
+}
+
+/*nuestro café*/
+.h3 {
+    width: 180px;
+    height: 70px;
+    display: flex;
+    justify-items: center;
+    margin-top: 150px;
+    margin-left: 900px;
+    font-family: "Berkshire Swash", serif;
+    font-weight: lighter;
+    font-size: 50px;
+    font-style: normal;
+}
+
+.h4 {
+    text-align: center;
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    height: 70px;
+    width: 100px;
+    margin-left: 1000px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.p {
+    padding: 30px;
+    padding-right: 50px;
+    text-align: center;
+    font-family: "Bad Script", cursive;
+    font-size: 20px;
+    height: 450px;
+    width: 500px;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+.contenedor2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+}
+
+.btn2 {
+    background-color: #735A3C;
+    text-align: center;
+    font-family: "Bitter", serif;
+    display: inline-block;
+    font-size: 16px; 
+    padding: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer; 
+}
+
+/*ESTILOS GRILLAS INICIO*/
+.grid__inicio {
+    padding-top: 100px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(1, 400px);
+    grid-template-areas:
+            /*colum 1*/    /*colum 2*/    /*colum 3*/
+    /*fila1*/"pic1          pic2            pic3"
+    ;
+    column-gap: 80px;
+}
+
+.grid__inicio img {
+    width: 100%;
+    height: 100%;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.pic2 {
+    background-image: url("images/Otoño.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+}
+
+.pic3 {
+    background-image: url("images/Libros.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.parrafos { 
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    font-family: "Bitter", serif;
+    font-style: oblique;
+}
+
+.p1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.p2 {
+    display: flex;
+    justify-content: center;
+    margin-left: 140px;
+    margin-right: 0;
+}
+
+.p3 {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    padding-left: 50px;
+    width: 100%;
+}
+
+
+
+.grid__nuestro {
+    display: grid;
+    width: 1400px;
+    height: 500px;
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(9,50px) ;
+}
+
+.grid__nuestro img {
+    width: 100%;
+    height: 100%;
+}
+
+.pic4 {
+    grid-row: 2/6;
+    grid-column: 5/9;
+}
+
+.pic5 {
+    grid-row: 6/10;
+    grid-column: 2/5;
+}
+
+.p {
+    grid-row: 1/6;
+    grid-column: 6/10;
+}
+
+@media (max-width: 1200px) {
+    .grid__inicio {
+        grid-template-columns: repeat(1, 400px);
+        grid-template-rows: repeat(7, 400px);
+        grid-template-areas:
+                /*colum 1*/    
+        /*fila1*/"pic1"                    
+        /*fila2*/"p1"
+        /*fila3*/"pic2"
+        /*fila4*/"p2"
+        /*fila5*/"pic3"
+        /*fila6*/"p3"
+        /*fila7*/"btn"
+    }
+}
+
+@media (max-width: 1200px) {
+    .grid__nuestro {
+    
+    }
+}
+
+/*ESTILOS GRILLAS PAGES GALERIA*/
+.galeria {
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Berkshire Swash", serif;
+}
+
+.section__grid {
+    margin-top: 50px;
+    display: grid;
+    width: 1400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas:
+            /*col1*/    /*col2*/    /*col3*/    /*col4*/
+    /*fila1*/"img1        img2       img3       img4"
+    /*fila2*/"img5        img5       img6       img6" 
+    ;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.section__grid img {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+grid-area: img6;
+}
+
+@media (max-width: 1200px) {
+    .section__grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 300px);
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img5"
+        "img6 img6"
+        ;
+    }
+}
+
+/*horario sobre nosotros*/
+
+#body {
+    font-family: "Bad Script", cursive;
+    background-color: #f4f4f4;
+    z-index: 10;
+}
+
+.schedule-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Berkshire Swash", serif;
+}
+
+.schedule-table {
+    width: 100%;
+}
+
+.schedule-table th , .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: #E4D8CA;
+}
+
+.schedule-table tr:nth-child(2n+1) {
+    background-color: #F3EBE0;
+}
+
+
+/*ESTILOS DE FOOTER*/
+#footer{
+    width: 100%;
+    height: 300px;
+    background-color: beige;
+    padding-top: 150px;
+    font-size: 30px;
+}
+
+.fieldset{
+    text-align: center;
+}
+
+
